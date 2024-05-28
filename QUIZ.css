@@ -1,0 +1,99 @@
+body {
+    background-image: url("bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f5dfff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: hsl(282, 46%, 75%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+
+h1 {
+    color: #333;
+}
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 30em;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b0c4a;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+#quiz {
+    margin-top: 30px;
+}
+
+#options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#options button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #efcbff;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+#options button:hover {
+    background-color: #e0e0e0;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    animation: fadeOut 1s ease-in-out forwards;
+}
+
+#result {
+    margin-top: 30px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
